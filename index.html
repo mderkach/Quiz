@@ -78,7 +78,7 @@
 
                 </div>
             </div>
-            <div class="row">
+            <div class="row d-none d-md-flex">
                 <div class="progressbar__wrapper col-12 col-md-6">
                     <p class="progressbar__description text-left">Вопрос 1 из 5</p>
                     <div class="progressbar">
@@ -94,6 +94,21 @@
                     <button class="navigation__button text-center enabled next" disabled>&#8594; Далее</button>
                     <!-- по умолчанию выключено, класс и состояние enabled присваивать при radio:chacked -->
                 </div>
+            </div>
+            <div class="row d-flex d-md-none justify-content-between">
+                 <div class="col-6">
+                    <p class="progressbar__description text-left">Вопрос 1 из 5</p>
+                    <div class="progressbar">
+                        <span style="width: 20%"></span>
+                    </div>
+                 </div>
+                 <div class="col-6">
+                      <img src="img/logo.png" class="quiz__logo-mobile d-sm-block d-md-none" alt="">
+                 </div>       
+            </div>
+            <div class="row navigation d-flex d-md-none justify-content-between">
+                <button class="navigation__button text-center prev">&#8592; Назад</button>
+                <button class="navigation__button text-center enabled next" disabled>&#8594; Далее</button>
             </div>
         </div>
     </div>
