@@ -8,6 +8,8 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+    .container.quiz-modal__container
+        max-width: 100%!important
     .heading__main 
         font-size: 35px
     .empty
@@ -15,15 +17,23 @@
     .button__popup
         padding: 15px
         font-size: $font-size-default
+    .quiz-form__radio
+        margin-bottom: 40px
     
 // ≥768px
 +media-breakpoint-down(sm)
+    .container.quiz-modal__container
+        max-width: 100%!important
     .quiz-form__radio,.hint__wrapper,.progressbar__description
         margin-bottom: 10px
     .navigation
         margin-top: 20px
+    .quiz__logo
+        height: 40%
 // ≥576px
 +media-breakpoint-down(xs)
+    .container.quiz-modal__container
+        max-width: 100%!important
 
 @media (max-width: 425px)
     .quiz
