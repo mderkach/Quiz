@@ -1,0 +1,62 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+    .heading__main 
+        font-size: 35px
+    .empty
+        height: 18vh
+    .button__popup
+        padding: 15px
+        font-size: $font-size-default
+    
+// ≥768px
++media-breakpoint-down(sm)
+    .quiz-form__radio,.hint__wrapper,.progressbar__description
+        margin-bottom: 10px
+    .navigation
+        margin-top: 20px
+// ≥576px
++media-breakpoint-down(xs)
+
+@media (max-width: 425px)
+    .quiz
+        padding: 5px
+        max-width: 90%!important
+    .hint__heading, .navigation__button, .quiz__title, .progressbar__description
+        font-size: 12px
+    .quiz__question 
+        font-size: 18px
+    .radio__description
+        font-size: 14px
+    input[type=radio]
+        margin-right: 5px
+    .heading__main 
+        font-size: 28px
+    .subheading__main 
+        font-size: 15px
+        
+    .navigation__button
+        width: 45%
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

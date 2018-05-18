@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+
+    <title>Quiz</title>
+    <meta name="description" content="">
+    <!---->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <!--
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+-->
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <!--    <meta name="theme-color" content="#000">-->
+    <!-- Custom Browsers Color End -->
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400|Rubik:300,500&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+    <!-- Custom HTML -->
+    <section class="screen fullscreen">
+        <div class="container">
+            <div class="row flex-column text-center align-middle">
+                <div class="col-8 offset-2">
+                    <div class="empty"></div>
+                    <h1 class="heading__main">Готовы ли вы к отпуску?</h1>
+                    <p class="subheading__main">Пройдите тест и узнайте</p>
+                    <div class="empty"></div>
+                    <div class="button main__button">
+                        <a href="javascript:;" data-fancybox data-src="#quiz" data-animation-duration="700" class="button__popup fancybox">Пройти тест</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  1st quiz  -->
+    <div class="quiz quiz__modal" id="quiz">
+        <div class="container">
+            <div class="row quiz__container">
+                <div class="col-12 col-md-6 d-flex flex-column justify-content-between">
+                    <p class="quiz__title text-left d-flex flex-wrap align-items-center">
+                        <img src="img/checker.png" alt="" class="checker"> Узнайте, готовы ли Вы для путешествия
+                    </p>
+                    <h2 class="quiz__question">Как давно вы были в отпуске?</h2>
+                    <form action="#post" class="quiz-form__radio d-flex flex-column">
+                        <label class="d-flex align-items-center" for="radio_1">
+                            <input name="raio_vacation" id="radio_1" value="Две недели назад" type="radio">
+                            <p class="radio__description">Две недели назад</p>
+                        </label>
+                        <label class="d-flex align-items-center" for="radio_2">
+                            <input name="raio_vacation" id="radio_2" value="Две недели назад" type="radio">
+                            <p class="radio__description">Полгода назад</p>
+                        </label>
+                        <label class="d-flex align-items-center" for="radio_3">
+                            <input name="raio_vacation" id="radio_3" value="Две недели назад" type="radio">
+                            <p class="radio__description">Не помню</p>
+                        </label>
+                    </form>
+                </div>
+                <div class="col-12 col-md-6 d-flex flex-column justify-content-between">
+                    <div class="hint__wrapper">
+                        <p class="hint__heading">Наведите на вариант ответа,<br class="d-none d-md-block">чтобы получить подсказку</p>
+                        <img src="img/hint-image.jpg" alt="" class="img-responsive">
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="progressbar__wrapper col-12 col-md-6">
+                    <p class="progressbar__description text-left">Вопрос 1 из 5</p>
+                    <div class="progressbar"></div>
+                </div>
+                <div class="navigation col-12 col-md-6 d-flex justify-content-between">
+                    <button class="navigation__button text-center prev">&#8592; Назад</button>
+                    <button class="navigation__button text-center enabled next" disabled>&#8594; Далее</button> <!-- по умолчанию выключено, класс и состояние enabled присваивать при radio:chacked -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
