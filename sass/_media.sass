@@ -21,13 +21,32 @@
         margin-bottom: 40px
     .progressbar
         max-width: 100%
+    .discount__wrapper
+        margin-top: 20px
+        //max-width: 445.5px
+        //width: 100%
+    //.specialist__wrapper
+        margin-left: 10px
+    //.discount__wrapper
+        margin-right: 10px
+    .discount__heading
+        margin-bottom: 0
+        &::after
+            display: none
+    .discout__img
+        margin-right: 15px
+    .specialist
+        margin-bottom: 0
+        margin-right: 30px
+    .specialist__description
+        margin-bottom: 0
     
 // ≥768px
 +media-breakpoint-down(sm)
-    .container.quiz-modal__container
-        max-width: 100%!important
-    .quiz-form__radio,.hint__wrapper,.progressbar__description
+    .quiz-form__radio,.hint__wrapper,.progressbar__description,.quiz-form__salary
         margin-bottom: 10px
+    .specialist__wrapper
+        margin-bottom: 20px
     .navigation
         margin-top: 20px
     .quiz__logo-mobile
@@ -36,14 +55,16 @@
         margin-left: 20%;
     .navigation 
         margin-bottom: 20px;
+    
 // ≥576px
 +media-breakpoint-down(xs)
-    .container.quiz-modal__container
-        max-width: 100%!important
     .quiz__logo
         width: 30%
+    .discount__wrapper,.specialist__wrapper
+        max-width: 100%
+        margin: 10px 0
 
-@media (max-width: 425px)
+@media (max-width: 574px)
     .quiz
         padding: 5px
         max-width: 90%!important
@@ -65,7 +86,30 @@
         margin-left: 20%;
     .navigation__button
         width: 45%
-
+    .discount__heading
+        display: block
+    .specialist
+        margin-right: 0
+    .specialist__avatar
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 0
+    .discount__counter
+        font-size: $font-size-default * 2 - 2 
+@media (max-width: 425px)
+    .discount__wrapper
+        justify-content: center!important
+    .discount__heading
+        margin: 10px
+    .specialist
+        margin-bottom: 10px
+    .specialist__description
+        br
+            display: none
+    input[type=number]
+        width: 80%
+        
 
 
 /*==========  Mobile First  ==========*/

@@ -87,7 +87,8 @@ b, strong
         color: $accent
         background: $default-hover-gradient
         text-decoration: none
-/* quiz */
+
+/*========= quiz =========*/
 .quiz
     display: none
     cursor: default!important
@@ -117,18 +118,17 @@ b, strong
         margin-top: 10px
         width: 75%
         height: 2px
-        background: linear-gradient(18deg, #6091ba 48%, #7099bc 50%, #7a9ebd 52%)
+        background: $after-gradient
     
-.checker
-    margin-right: 12px
-
 .quiz__question 
     font-size: $font-size-default + 4
     font-weight: 300
 
+// form styling
 .quiz-form__radio
     margin-bottom: 80px
-    
+.quiz-form__salary
+    margin-bottom: 30%    
 input[type='radio']
     appearance: none
     margin-right: 20px
@@ -149,13 +149,25 @@ input[type='radio']
     &:checked
         &:before
             background: $default-gradient
+input[type='number']
+    padding-left: 15px
+    max-width: 280px
+    width: 100%
+//remove spinners start
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button 
+    -webkit-appearance: none
+    margin: 0
+input[type=number]
+    -moz-appearance: textfield
+//remove spinners end
 label
+    font-family: $default-font
     &:hover
         cursor: pointer  
-
 .radio__description
     margin-bottom: 0
-    
+.checker
+    margin-right: 12px
 .progressbar
     border-radius: 3px 
     border: 0.5px solid #1364a9
@@ -168,19 +180,65 @@ label
         height: 100%
 .progressbar__description
     margin-bottom: 0
-    
+.hint__wrapper,.discount__wrapper,.specialist__wrapper
+    border: 1px solid $accent
 .hint__wrapper
     padding: 15px 25px
-    border: 1px solid $accent
+    height: 100%
     img
         width: 100%
-        height: 100%
         max-height: 278px
+.discount__wrapper, .specialist__wrapper
+    padding: 15px 10px
+.discount__heading
+    font-family: 'Rubick'
+    font-weight: 300
+    line-height: 1
+    &::after
+        content: ''
+        display: block
+        margin-top: 10px
+        width: 60%
+        height: 2px
+        background: $after-gradient
+.discount__subheading
+    font-size: $font-size-default - 6
+    line-height: $font-size-default - 6
+    margin-bottom: 0
+.discount__counter
+    font-size: 48px
+    margin-right: 10px
+.specialist
+    margin-bottom: 30px
+.specialist__wrapper
+    margin-top: 20px
+.specialist__info
+    display: inline-block
+    vertical-align: middle
+.specialist__name,.specialist__role,.specialist__description
+    font-family: 'Rubik'
+    font-weight: 300
+    line-height: $font-size-default - 4
+    margin-bottom: 10px
+.specialist__name,.specialist__description
+    font-size: $font-size-default - 4
+.specialist__role
+    font-size: $font-size-default - 6
+    margin-bottom: 0
+.specialist__avatar
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    margin-right: 15px
+.salary__hint
+    font-family: $default-font
+    font-size: $font-size-default - 4
+    font-weight: 300
+    line-height: 24px
 .quiz__logo
     height: 30%
     width: 20%
-    margin-bottom: 20px
-    
+    margin-bottom: 20px  
 .navigation
     margin-top: 20px
     
@@ -198,11 +256,14 @@ label
     &:hover
         background: $default-hover-gradient
         color: $text
-    
-.enabled
-    background: $default-gradient
-    border: none
-    color: #fff
+    &:disabled
+        opacity: 0.5
+    &:not(disabled)+.enabled
+        opcaity: 1
+        background: $default-gradient
+        border: none
+        color: #fff
+        
         
     
 @import "media" // Always at the end
