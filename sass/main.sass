@@ -124,10 +124,10 @@ b, strong
     font-size: $font-size-default + 4
     font-weight: 300
 
-// form styling
+// form styling start
 .quiz-form__radio
     margin-bottom: 80px
-.quiz-form__salary
+.quiz-form__salary, .quiz-form__file
     margin-bottom: 30%    
 input[type='radio']
     appearance: none
@@ -153,17 +153,37 @@ input[type='number']
     padding-left: 15px
     max-width: 280px
     width: 100%
+    &::placeholder
+        opacity: 0.5
 //remove spinners start
-input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button 
+input[type='number']::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button 
     -webkit-appearance: none
     margin: 0
-input[type=number]
+input[type='number']
     -moz-appearance: textfield
+input[type="file"]
+    display: none
 //remove spinners end
 label
     font-family: $default-font
     &:hover
-        cursor: pointer  
+        cursor: pointer
+label[for='file']
+    border-radius: 3px;
+    border: 1px solid #000 
+    background:  #fff
+    opacity: 0.5
+    width: 100%
+    max-width: 210px
+    box-sizing: border-box
+    padding: 0 1%
+    &:hover
+        opacity: 1
+.button_upload
+    vertical-align: middle  
+.upload
+    margin: 10px
+// form styling end
 .radio__description
     margin-bottom: 0
 .checker
