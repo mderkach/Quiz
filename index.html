@@ -131,7 +131,7 @@
                     <h2 class="quiz__question">Какая у вас зарплата?</h2>
                     <form method="post" action="#post" class="quiz-form__salary d-flex flex-column">
                         <label for="salary">
-                            <input name="salary" min="1" type="number" placeholder="Зарплата">, руб.
+                            <input name="salary" min="1" type="number" placeholder="Зарплата" onfocus="this.placeholder = 'Введите число'" onblur="this.placeholder = 'Зарплата'">, руб.
                         </label>
                         <button class="navigation__button text-center next" disabled="disabled">Продолжить</button>
                         <!-- по умолчанию выключено -->
