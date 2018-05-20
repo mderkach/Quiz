@@ -42,43 +42,57 @@
                     <div class="button main__button">
                         <a href="javascript:;" data-fancybox data-src="#quiz" data-animation-duration="700" class="button__popup fancybox">Пройти тест</a>
                     </div>
-                    <div class="d-flex flex-row">
+                    <!--   for demo only!!!!   -->
+                    <div class="d-flex flex-md-row flex-column">
                         <div class="button main__button">
                             <a href="javascript:;" data-fancybox data-src="#quiz2" data-animation-duration="700" class="button__popup fancybox">2 виджет</a>
                         </div>
                         <div class="button main__button">
                             <a href="javascript:;" data-fancybox data-src="#quiz3" data-animation-duration="700" class="button__popup fancybox">3 виджет</a>
                         </div>
+                        <div class="button main__button">
+                            <a href="javascript:;" data-fancybox data-src="#quiz4" data-animation-duration="700" class="button__popup fancybox">4 виджет</a>
+                        </div>
+                        <div class="button main__button">
+                            <a href="javascript:;" data-fancybox data-src="#quiz5" data-animation-duration="700" class="button__popup fancybox">5 виджет</a>
+                        </div>
                     </div>
+                    <!--   for demo only!!!!  -->
                 </div>
             </div>
         </div>
     </section>
     <!--  1st quiz  -->
     <div class="quiz quiz-modal" id="quiz">
-        <div class="container quiz-modal__container">
-            <div class="row quiz__container">
-                <div class="col-12 col-md-6 d-flex flex-column justify-content-between">
+        <div class="quiz-modal__container container">
+            <div class="quiz__container row">
+                <div class="column__left col-12 col-md-6 d-flex flex-column justify-content-between">
                     <p class="quiz__title text-left d-flex flex-wrap align-items-center">
                         <img src="img/checker.png" alt="" class="checker"> Узнайте, готовы ли Вы для путешествия
                     </p>
                     <h2 class="quiz__question">Как давно вы были в отпуске?</h2>
                     <form method="post" action="#post" class="quiz-form__radio d-flex flex-column">
-                        <label class="d-flex align-items-center" for="radio_1">
+                        <div class="form-group">
+                            <label class="d-flex align-items-center" for="radio_1">
                             <input name="raio_vacation" id="radio_1" value="Две недели назад" type="radio">
                             <p class="radio__description">Две недели назад</p>
                         </label>
-                        <label class="d-flex align-items-center" for="radio_2">
+                        </div>
+                        <div class="form-group">
+                            <label class="d-flex align-items-center" for="radio_2">
                             <input name="raio_vacation" id="radio_2" value="Две недели назад" type="radio">
                             <p class="radio__description">Полгода назад</p>
                         </label>
-                        <label class="d-flex align-items-center" for="radio_3">
+                        </div>
+                        <div class="form-group">
+                            <label class="d-flex align-items-center" for="radio_3">
                             <input name="raio_vacation" id="radio_3" value="Две недели назад" type="radio">
                             <p class="radio__description">Не помню</p>
                         </label>
+                        </div>
                     </form>
                 </div>
-                <div class="col-12 col-md-6 d-flex flex-column justify-content-between">
+                <div class="column__right col-12 col-md-6 d-flex flex-column justify-content-between">
                     <div class="hint__wrapper">
                         <p class="hint__heading">Наведите на вариант ответа,<br class="d-none d-md-block">чтобы получить подсказку</p>
                         <img src="img/hint-image.jpg" alt="" class="img-responsive">
@@ -86,7 +100,7 @@
 
                 </div>
             </div>
-            <div class="row d-none d-md-flex">
+            <div class="desktop row d-none d-md-flex">
                 <div class="progressbar__wrapper col-12 col-md-6">
                     <p class="progressbar__description text-left">Вопрос 1 из 5</p>
                     <div class="progressbar">
@@ -103,7 +117,7 @@
                     <!-- по умолчанию выключено, класс и состояние enabled присваивать при radio:chacked -->
                 </div>
             </div>
-            <div class="row d-flex d-md-none justify-content-between">
+            <div class="mobile row d-flex d-md-none justify-content-between">
                 <div class="col-6">
                     <p class="progressbar__description text-left">Вопрос 1 из 5</p>
                     <div class="progressbar">
@@ -114,7 +128,7 @@
                     <img src="img/logo.png" class="quiz__logo-mobile d-sm-block d-md-none" alt="">
                 </div>
             </div>
-            <div class="row navigation d-flex d-md-none justify-content-between">
+            <div class="mobile navigation row  d-flex d-md-none justify-content-between">
                 <button class="navigation__button text-center prev">&#8592; Назад</button>
                 <button class="navigation__button text-center next" disabled="disabled">&#8594; Далее</button>
             </div>
@@ -122,9 +136,9 @@
     </div>
     <!--  2nd quiz  -->
     <div class="quiz quiz-modal" id="quiz2">
-        <div class="container quiz-modal__container">
-            <div class="row quiz__container">
-                <div class="col-12 col-lg-5 col-md-6 d-flex flex-column justify-content-between">
+        <div class="quiz-modal__container container">
+            <div class="quiz__container row">
+                <div class="column__left col-12 col-lg-5 col-md-6 d-flex flex-column justify-content-between">
                     <p class="quiz__title text-left d-flex flex-wrap align-items-center">
                         <img src="img/checker.png" alt="" class="checker"> Узнайте, готовы ли Вы для путешествия
                     </p>
@@ -137,14 +151,14 @@
                         <!-- по умолчанию выключено -->
                     </form>
                 </div>
-                <div class="col-12 col-lg-4 col-md-6 d-flex flex-column justify-content-between">
+                <div class="column__center col-12 col-lg-4 col-md-6 d-flex flex-column justify-content-between">
                     <div class="hint__wrapper">
                         <p class="hint__heading salary__hint">От этого зависит направление Вашего отпуска: на Колыму или Майами</p>
                         <img src="img/hint-image.jpg" alt="" class="img-responsive">
                     </div>
                 </div>
                 <div class="w-100 d-lg-none"></div>
-                <div class="col-12 col-lg-3 col-md-12 d-flex flex-column justify-content-between">
+                <div class="column__right col-12 col-lg-3 col-md-12 d-flex flex-column justify-content-between">
                     <div class="discount__wrapper d-lg-block d-flex justify-content-between flex-wrap">
                         <p class="discount__heading  d-flex flex-wrap justify-content-around align-items-center">
                             <span class="discount__counter">22%</span> Ваша<br>скидка
@@ -164,7 +178,7 @@
 
                 </div>
             </div>
-            <div class="row d-none d-md-flex">
+            <div class="desktop row d-none d-md-flex">
                 <div class="progressbar__wrapper col-12 col-md-6">
                     <p class="progressbar__description text-left">Вопрос 2 из 5</p>
                     <div class="progressbar">
@@ -181,7 +195,7 @@
                     <!-- по умолчанию выключено -->
                 </div>
             </div>
-            <div class="row d-flex d-md-none justify-content-between">
+            <div class="mobile row d-flex d-md-none justify-content-between">
                 <div class="col-6">
                     <p class="progressbar__description text-left">Вопрос 2 из 5</p>
                     <div class="progressbar">
@@ -192,7 +206,7 @@
                     <img src="img/logo.png" class="quiz__logo-mobile d-sm-block d-md-none" alt="">
                 </div>
             </div>
-            <div class="row navigation d-flex d-md-none justify-content-between">
+            <div class="mobile navigation row  d-flex d-md-none justify-content-between">
                 <button class="navigation__button text-center prev">&#8592; Назад</button>
                 <button class="navigation__button text-center next" disabled="disabled">&#8594; Далее</button>
             </div>
@@ -200,9 +214,9 @@
     </div>
     <!--  3rd quiz  -->
     <div class="quiz quiz-modal" id="quiz3">
-        <div class="container quiz-modal__container">
-            <div class="row quiz__container">
-                <div class="col-12 col-md-6 d-flex flex-column justify-content-between">
+        <div class="quiz-modal__container container">
+            <div class="quiz__container row">
+                <div class="column__left col-12 col-md-6 d-flex flex-column justify-content-between">
                     <p class="quiz__title text-left d-flex flex-wrap align-items-center">
                         <img src="img/checker.png" alt="" class="checker"> Узнайте, готовы ли Вы для путешествия
                     </p>
@@ -214,7 +228,7 @@
                         </label>
                     </form>
                 </div>
-                <div class="col-12 col-md-6 d-flex flex-column justify-content-between">
+                <div class="column__right col-12 col-md-6 d-flex flex-column justify-content-between">
                     <div class="hint__wrapper">
                         <p class="hint__heading">Рассмотрим и выдадим вам кредит</p>
                         <img src="img/hint-image.jpg" alt="" class="img-responsive">
@@ -222,7 +236,7 @@
 
                 </div>
             </div>
-            <div class="row d-none d-md-flex">
+            <div class="desktop row d-none d-md-flex">
                 <div class="progressbar__wrapper col-12 col-md-6">
                     <p class="progressbar__description text-left">Вопрос 3 из 5</p>
                     <div class="progressbar">
@@ -239,7 +253,7 @@
                     <!-- по умолчанию выключено, класс и состояние enabled присваивать при radio:chacked -->
                 </div>
             </div>
-            <div class="row d-flex d-md-none justify-content-between">
+            <div class="mobile row d-flex d-md-none justify-content-between">
                 <div class="col-6">
                     <p class="progressbar__description text-left">Вопрос 3 из 5</p>
                     <div class="progressbar">
@@ -250,14 +264,213 @@
                     <img src="img/logo.png" class="quiz__logo-mobile d-sm-block d-md-none" alt="">
                 </div>
             </div>
-            <div class="row navigation d-flex d-md-none justify-content-between">
+            <div class="mobile navigation row  d-flex d-md-none justify-content-between">
                 <button class="navigation__button text-center prev">&#8592; Назад</button>
                 <button class="navigation__button text-center next" disabled="disabled">&#8594; Далее</button>
             </div>
         </div>
     </div>
+    <!--  4th quiz  -->
+    <div class="quiz quiz-modal" id="quiz4">
+        <div class="quiz-modal__container container">
+            <div class="quiz__container row">
+                <div class="column__semi-width col-12 col-lg-9 d-flex flex-column justify-content-between">
+                    <p class="quiz__title text-left d-flex flex-wrap align-items-center">
+                        <img src="img/checker.png" alt="" class="checker"> Узнайте, готовы ли Вы для путешествия
+                    </p>
+                    <p class="quiz__prequestion">Выберите наиболее подходящий вариант</p>
+                    <h2 class="quiz__question">Как выглядит Ваше рабочее место</h2>
+<!--
+                    <form method="post" action="#post" class="quiz-form__workplace d-flex flex-column">
+                        <label for="workplace_1">
+                            <input type="radio" name="workplace" id="workplace_1">
+                            <span class="workplace__image">
+                                <img src="img/workplace_1.jpg" alt="">
+                            </span>
+                            <span class="workplace__checker"></span>
+                        </label>
+                        <label for="workplace_2">
+                            <input type="radio" name="workplace" id="workplace_2">
+                            <span class="workplace__image">
+                                <img src="img/workplace_2.jpg" alt="">
+                            </span>
+                            <span class="workplace__checker"></span>
+                        </label>
+                        <label for="workplace_3">
+                            <input type="radio" name="workplace" id="workplace_3">
+                            <span class="workplace__image">
+                                <img src="img/workplace_3.jpg" alt="">
+                            </span>
+                            <span class="workplace__checker"></span>
+                        </label>
+                    </form>
+-->
+                </div>
+                <div class="w-100 d-lg-none"></div>
+                <div class="column__right col-12 col-lg-3 col-md-12 d-flex flex-column justify-content-between">
+                    <div class="discount__wrapper d-lg-block d-flex justify-content-between flex-wrap">
+                        <p class="discount__heading  d-flex flex-wrap justify-content-around align-items-center">
+                            <span class="discount__counter">22%</span> Ваша<br>скидка
+                        </p>
+                        <p class="discount__subheading d-flex flex-wrap justify-content-around align-items-center"><img src="img/increase.png" alt="" class="discout__img">Скидка растет с<br>каждым ответом</p>
+                    </div>
+                    <div class="specialist__wrapper d-lg-block d-flex justify-content-between flex-wrap">
+                        <div class="specialist">
+                            <img src="img/avatar.jpg" alt="" class="specialist__avatar">
+                            <div class="specialist__info">
+                                <p class="specialist__name">Frogger</p>
+                                <p class="specialist__role">Специалист</p>
+                            </div>
+                        </div>
+                        <p class="specialist__description">Я специализируюсь <br> на туракх, подскажу <br> и дам скидку</p>
+                    </div>
 
-
+                </div>
+            </div>
+            <div class="desktop row d-none d-md-flex">
+                <div class="progressbar__wrapper col-12 col-md-6">
+                    <p class="progressbar__description text-left">Вопрос 4 из 5</p>
+                    <div class="progressbar">
+                        <span style="width: 80%"></span>
+                    </div>
+                </div>
+                <div class="navigation col-12 col-md-6 d-flex flex-wrap justify-content-between">
+                    <div class="col d-sm-none d-md-block "></div>
+                    <img src="img/logo.png" class="quiz__logo d-sm-none d-md-block img-responsive" alt="">
+                    <div class="col-4 d-sm-none"></div>
+                    <div class="w-100"></div>
+                    <button class="navigation__button text-center prev">&#8592; Назад</button>
+                    <button class="navigation__button text-center next" disabled="disabled">&#8594; Далее</button>
+                    <!-- по умолчанию выключено -->
+                </div>
+            </div>
+            <div class="mobile row d-flex d-md-none justify-content-between">
+                <div class="col-6">
+                    <p class="progressbar__description text-left">Вопрос 4 из 5</p>
+                    <div class="progressbar">
+                        <span style="width: 80%"></span>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <img src="img/logo.png" class="quiz__logo-mobile d-sm-block d-md-none" alt="">
+                </div>
+            </div>
+            <div class="mobile navigation row  d-flex d-md-none justify-content-between">
+                <button class="navigation__button text-center prev">&#8592; Назад</button>
+                <button class="navigation__button text-center next" disabled="disabled">&#8594; Далее</button>
+            </div>
+        </div>
+    </div>
+    <!--  5th quiz  -->
+    <div class="quiz quiz-modal" id="quiz5">
+        <div class="quiz-modal__container container">
+            <div class="quiz__container row">
+                <div class="column__full-width col-12 d-flex flex-column justify-content-between">
+                    <p class="quiz__title text-left d-flex flex-wrap align-items-center">
+                        <img src="img/checker.png" alt="" class="checker"> Узнайте, готовы ли Вы для путешествия
+                    </p>
+                    <p class="quiz__prequestion">Выберите наиболее подходящий вариант</p>
+                    <h2 class="quiz__question">А тут много вариантов ответа, при этом вопрос и ответы без картинок?</h2>
+                    <form method="post" action="#post" class="quiz-form__checkbox d-flex flex-column">
+                        <div class="row flex-column flex-md-row">
+                            <div class="col-12 col-md-6">
+                                <div class="form-group checkbox-group">
+                                    <label class="checker__wrapper">
+                                        <input class="checkbox" type="checkbox" name="checkbox-test" checked>
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Вариант выбран</span>
+                                    </label>
+                                </div>
+                                <div class="form-group checkbox-group">
+                                    <label class="checker__wrapper">
+                                        <input class="checkbox" type="checkbox" name="checkbox-test">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Вариант не выбран</span>
+                                    </label>
+                                </div>
+                                <div class="form-group checkbox-group">
+                                    <label class="checker__wrapper">
+                                        <input class="checkbox" type="checkbox" name="checkbox-test" checked>
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Вариант выбран</span>
+                                    </label>
+                                </div>
+                                <div class="form-group checkbox-group">
+                                    <label class="checker__wrapper">
+                                        <input class="checkbox" type="checkbox" name="checkbox-test">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Вариант не выбран</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group checkbox-group">
+                                    <label class="checker__wrapper">
+                                        <input class="checkbox" type="checkbox" name="checkbox-test" checked>
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Вариант выбран</span>
+                                    </label>
+                                </div>
+                                <div class="form-group checkbox-group">
+                                    <label class="checker__wrapper">
+                                        <input class="checkbox" type="checkbox" name="checkbox-test">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Вариант не выбран</span>
+                                    </label>
+                                </div>
+                                <div class="form-group checkbox-group">
+                                    <label class="checker__wrapper">
+                                        <input class="checkbox" type="checkbox" name="checkbox-test" checked>
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Вариант выбран</span>
+                                    </label>
+                                </div>
+                                <div class="form-group checkbox-group">
+                                    <label class="checker__wrapper">
+                                        <input class="checkbox" type="checkbox" name="checkbox-test">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Вариант не выбран</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="desktop row d-none d-md-flex">
+                <div class="progressbar__wrapper col-12 col-md-6">
+                    <p class="progressbar__description text-left">Вопрос 5 из 5</p>
+                    <div class="progressbar">
+                        <span style="width: 100%"></span>
+                    </div>
+                </div>
+                <div class="navigation col-12 col-md-6 d-flex flex-wrap justify-content-between">
+                    <div class="col d-sm-none d-md-block "></div>
+                    <img src="img/logo.png" class="quiz__logo d-sm-none d-md-block img-responsive" alt="">
+                    <div class="col-4 d-sm-none"></div>
+                    <div class="w-100"></div>
+                    <button class="navigation__button text-center prev">&#8592; Назад</button>
+                    <button class="navigation__button text-center next" disabled="disabled">&#8594; Далее</button>
+                    <!-- по умолчанию выключено -->
+                </div>
+            </div>
+            <div class="mobile row d-flex d-md-none justify-content-between">
+                <div class="col-6">
+                    <p class="progressbar__description text-left">Вопрос 5 из 5</p>
+                    <div class="progressbar">
+                        <span style="width: 100%"></span>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <img src="img/logo.png" class="quiz__logo-mobile d-sm-block d-md-none" alt="">
+                </div>
+            </div>
+            <div class="mobile navigation row  d-flex d-md-none justify-content-between">
+                <button class="navigation__button text-center prev">&#8592; Назад</button>
+                <button class="navigation__button text-center next" disabled="disabled">&#8594; Далее</button>
+            </div>
+        </div>
+    </div>
 
     <script src="js/scripts.min.js"></script>
 </body>

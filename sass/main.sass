@@ -94,6 +94,8 @@ b, strong
     cursor: default!important
     max-width: 1000px
     width: 100%
+    //height: 100%
+    //max-height: 550px
     background-color:  #ffffff
     box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.1)
     box-sizing: border-box
@@ -112,14 +114,19 @@ b, strong
     font-size: $font-size-default - 4
     font-weight: 300
 .quiz__title
+    max-width: 335px
     &::after
         content: ''
         display: block
         margin-top: 10px
-        width: 75%
+        width: 100%
+        max-width: 250px
         height: 2px
         background: $after-gradient
-    
+.quiz__prequestion
+    font-size: $font-size-default - 4
+    line-height: $font-size-default + 4
+    margin-bottom: 5px
 .quiz__question 
     font-size: $font-size-default + 4
     font-weight: 300
@@ -183,6 +190,42 @@ label[for='file']
     vertical-align: middle  
 .upload
     margin: 10px
+/* checkbox start
+.checker__wrapper
+    border-radius: 3px
+    border: 1px solid #000
+    padding: 4px 5px
+    width: 85%
+.checkbox-group
+    &:nth-child(2n)
+        margin-bottom: 30px
+.checkbox
+	display: none
+.checkbox-custom 
+	position: relative
+	width: 22px            
+	height: 22px            
+	border: 1px solid #666
+	border-radius: 3px
+.checkbox-custom, .label 
+	display: inline-block
+	vertical-align: middle
+.checkbox-custom 
+        display: none
+.checkbox
+    &:checked + .checkbox-custom
+        display: inline-block
+        &::before
+            content: ""             
+            display: block			 
+            position: absolute      
+            top: 2px
+            right: 2px
+            bottom: 2px
+            left: 2px
+            background: $default-gradient
+            border-radius: 2px
+//checkbox end
 // form styling end
 .radio__description
     margin-bottom: 0
