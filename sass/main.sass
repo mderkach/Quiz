@@ -190,6 +190,33 @@ label[for='file']
     vertical-align: middle  
 .upload
     margin: 10px
+.workplace-group
+    margin-right: 5%
+input[name='workplace']
+    display: none        
+.workplace__checker
+    display: none
+    left: 160px
+    top: -170px
+    box-sizing: border-box
+input[name='workplace']
+    &:hover + .workplace__checker
+        display: inline-block
+    &:checked + .workplace__checker
+        display: inline-block
+        &::before
+            content: ""             
+            display: block			 
+            position: absolute      
+            top: 2px
+            right: 2px
+            bottom: 2px
+            left: 2px
+            background: $default-gradient
+            border-radius: 2px
+.workplace__image,.workplace,.workplace-group
+    width: 200px
+    height: 180px
 /* checkbox start
 .checker__wrapper
     border-radius: 3px
@@ -199,9 +226,7 @@ label[for='file']
 .checkbox-group
     &:nth-child(2n)
         margin-bottom: 30px
-.checkbox
-	display: none
-.checkbox-custom 
+.checkbox-custom,.workplace__checker 
 	position: relative
 	width: 22px            
 	height: 22px            
@@ -213,6 +238,7 @@ label[for='file']
 .checkbox-custom 
         display: none
 .checkbox
+    display: none
     &:checked + .checkbox-custom
         display: inline-block
         &::before
@@ -327,6 +353,27 @@ label[for='file']
         border: none
         color: #fff
         
-        
-    
+//slider
+.owl-dot
+    width: 10px
+    height: 10px
+    border-radius: 50%
+    background-color: #000!important
+    color: red!important
+//////
+.owl-nav
+    display: flex;
+    justify-content: center;
+    button
+        margin: 10px
+        padding: 3px 6px
+        i
+            color: #226cac
+            border: 1px transparent solid
+            border-radius: 50%
+            padding: 3px 6px
+            &:hover
+                border: 1px $accent solid
+                box-shadow: 0px 0px 7px 3px rgba(255, 255, 255, 0.07)
+
 @import "media" // Always at the end

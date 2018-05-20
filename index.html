@@ -25,6 +25,7 @@
     <!-- Custom Browsers Color End -->
     <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400|Rubik:300,500&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 </head>
 
@@ -280,31 +281,59 @@
                     </p>
                     <p class="quiz__prequestion">Выберите наиболее подходящий вариант</p>
                     <h2 class="quiz__question">Как выглядит Ваше рабочее место</h2>
-<!--
-                    <form method="post" action="#post" class="quiz-form__workplace d-flex flex-column">
-                        <label for="workplace_1">
-                            <input type="radio" name="workplace" id="workplace_1">
-                            <span class="workplace__image">
-                                <img src="img/workplace_1.jpg" alt="">
-                            </span>
-                            <span class="workplace__checker"></span>
-                        </label>
-                        <label for="workplace_2">
-                            <input type="radio" name="workplace" id="workplace_2">
-                            <span class="workplace__image">
-                                <img src="img/workplace_2.jpg" alt="">
-                            </span>
-                            <span class="workplace__checker"></span>
-                        </label>
-                        <label for="workplace_3">
-                            <input type="radio" name="workplace" id="workplace_3">
-                            <span class="workplace__image">
-                                <img src="img/workplace_3.jpg" alt="">
-                            </span>
-                            <span class="workplace__checker"></span>
-                        </label>
+                    <form method="post" action="#post" class="quiz-form__workplace">
+                        <div class="row owl-carousel">
+                            <div class="workplace-group form-group">
+                                <label class="workplace" for="workplace_1">
+                                    <img class="workplace__image" src="img/workplace_1.jpg" alt="">
+                                    <input class="workplace__input" type="radio" name="workplace" id="workplace_1">
+                                    <span class="workplace__checker"></span>   
+                                </label>
+                            </div>
+                            <div class="workplace-group form-group">
+                                <label class="workplace" for="workplace_2">
+                                    <img class="workplace__image" src="img/workplace_2.jpg" alt="">
+                                    <input class="workplace__input" type="radio" name="workplace" id="workplace_2">
+                                    <span class="workplace__checker"></span>   
+                                </label>
+                            </div>
+                            <div class="workplace-group form-group">
+                                <label class="workplace" for="workplace_3">
+                                    <img class="workplace__image" src="img/workplace_3.jpg" alt="">
+                                    <input class="workplace__input" type="radio" name="workplace" id="workplace_3">
+                                    <span class="workplace__checker"></span>   
+                                </label>
+                            </div>
+                            <div class="workplace-group form-group">
+                                <label class="workplace" for="workplace_4">
+                                    <img class="workplace__image" src="img/workplace_2.jpg" alt="">
+                                    <input class="workplace__input" type="radio" name="workplace" id="workplace_4">
+                                    <span class="workplace__checker"></span>   
+                                </label>
+                            </div>
+                            <div class="workplace-group form-group">
+                                <label class="workplace" for="workplace_5">
+                                    <img class="workplace__image" src="img/workplace_1.jpg" alt="">
+                                    <input class="workplace__input" type="radio" name="workplace" id="workplace_5">
+                                    <span class="workplace__checker"></span>   
+                                </label>
+                            </div>
+                            <div class="workplace-group form-group">
+                                <label class="workplace" for="workplace_6">
+                                    <img class="workplace__image" src="img/workplace_3.jpg" alt="">
+                                    <input class="workplace__input" type="radio" name="workplace" id="workplace_6">
+                                    <span class="workplace__checker"></span>   
+                                </label>
+                            </div>
+                            <div class="external-scroll_x">
+                                <div class="scroll-element_outer">
+                                    <div class="scroll-element_size"></div>
+                                    <div class="scroll-element_track"></div>
+                                    <div class="scroll-bar"></div>
+                                </div>
+                            </div>
+                        </div>
                     </form>
--->
                 </div>
                 <div class="w-100 d-lg-none"></div>
                 <div class="column__right col-12 col-lg-3 col-md-12 d-flex flex-column justify-content-between">
