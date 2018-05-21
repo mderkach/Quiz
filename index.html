@@ -63,6 +63,132 @@
             </div>
         </div>
     </section>
+    <section>
+            <div class="quiz quiz-modal" style="display: block; margin: 0 auto" id="quiz4"> <!-- по умолчанию display:none для fancybox -->
+                <div class="quiz-modal__container container">
+                    <div class="quiz__container row">
+                        <div class="column__semi-width col-12 col-lg-9 d-flex flex-column justify-content-between">
+                            <p class="quiz__title text-left d-flex flex-wrap align-items-center">
+                                <img src="img/checker.png" alt="" class="checker"> Узнайте, готовы ли Вы для путешествия
+                            </p>
+                            <p class="quiz__prequestion">Выберите наиболее подходящий вариант</p>
+                            <h2 class="quiz__question">Как выглядит Ваше рабочее место</h2>
+                             <form class="quiz-form__workplace swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                       <div class="workplace-group form-group">
+                                            <label class="workplace" for="workplace_1">
+                                                <img class="workplace__image" src="img/workplace_1.jpg" alt="">
+                                                <input class="workplace__input" type="radio" name="workplace" id="workplace_1">
+                                                <span class="workplace__checker"></span>   
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                       <div class="workplace-group form-group">
+                                            <label class="workplace" for="workplace_2">
+                                                <img class="workplace__image" src="img/workplace_3.jpg" alt="">
+                                                <input class="workplace__input" type="radio" name="workplace" id="workplace_2">
+                                                <span class="workplace__checker"></span>   
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                       <div class="workplace-group form-group">
+                                            <label class="workplace" for="workplace_3">
+                                                <img class="workplace__image" src="img/workplace_3.jpg" alt="">
+                                                <input class="workplace__input" type="radio" name="workplace" id="workplace_3">
+                                                <span class="workplace__checker"></span>   
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                       <div class="workplace-group form-group">
+                                            <label class="workplace" for="workplace_4">
+                                                <img class="workplace__image" src="img/workplace_2.jpg" alt="">
+                                                <input class="workplace__input" type="radio" name="workplace" id="workplace_4">
+                                                <span class="workplace__checker"></span>   
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                       <div class="workplace-group form-group">
+                                            <label class="workplace" for="workplace_5">
+                                                <img class="workplace__image" src="img/workplace_3.jpg" alt="">
+                                                <input class="workplace__input" type="radio" name="workplace" id="workplace_5">
+                                                <span class="workplace__checker"></span>   
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                       <div class="workplace-group form-group">
+                                            <label class="workplace" for="workplace_6">
+                                                <img class="workplace__image" src="img/workplace_1.jpg" alt="">
+                                                <input class="workplace__input" type="radio" name="workplace" id="workplace_6">
+                                                <span class="workplace__checker"></span>   
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-scrollbar"></div>
+                            </form>
+                        </div>
+                        <div class="w-100 d-lg-none"></div>
+                        <div class="column__right col-12 col-lg-3 col-md-12 d-flex flex-column justify-content-between">
+                            <div class="discount__wrapper d-lg-block d-flex justify-content-between flex-wrap">
+                                <p class="discount__heading  d-flex flex-wrap justify-content-around align-items-center">
+                                    <span class="discount__counter">22%</span> Ваша<br>скидка
+                                </p>
+                                <p class="discount__subheading d-flex flex-wrap justify-content-around align-items-center"><img src="img/increase.png" alt="" class="discout__img">Скидка растет с<br>каждым ответом</p>
+                            </div>
+                            <div class="specialist__wrapper d-lg-block d-flex justify-content-between flex-wrap">
+                                <div class="specialist">
+                                    <img src="img/avatar.jpg" alt="" class="specialist__avatar">
+                                    <div class="specialist__info">
+                                        <p class="specialist__name">Frogger</p>
+                                        <p class="specialist__role">Специалист</p>
+                                    </div>
+                                </div>
+                                <p class="specialist__description">Я специализируюсь <br> на туракх, подскажу <br> и дам скидку</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="desktop row d-none d-md-flex">
+                        <div class="progressbar__wrapper col-12 col-md-6">
+                            <p class="progressbar__description text-left">Вопрос 4 из 5</p>
+                            <div class="progressbar">
+                                <span style="width: 80%"></span>
+                            </div>
+                        </div>
+                        <div class="navigation col-12 col-md-6 d-flex flex-wrap justify-content-between">
+                            <div class="col d-sm-none d-md-block "></div>
+                            <img src="img/logo.png" class="quiz__logo d-sm-none d-md-block img-responsive" alt="">
+                            <div class="col-4 d-sm-none"></div>
+                            <div class="w-100"></div>
+                            <button class="navigation__button text-center prev">&#8592; Назад</button>
+                            <button class="navigation__button text-center next" disabled="disabled">&#8594; Далее</button>
+                        </div>
+                    </div>
+                    <div class="mobile row d-flex d-md-none justify-content-between">
+                        <div class="col-6">
+                            <p class="progressbar__description text-left">Вопрос 4 из 5</p>
+                            <div class="progressbar">
+                                <span style="width: 80%"></span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <img src="img/logo.png" class="quiz__logo-mobile d-sm-block d-md-none" alt="">
+                        </div>
+                    </div>
+                    <div class="mobile navigation row  d-flex d-md-none justify-content-between">
+                        <button class="navigation__button text-center prev">&#8592; Назад</button>
+                        <button class="navigation__button text-center next" disabled="disabled">&#8594; Далее</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
     <!--  1st quiz  -->
     <div class="quiz quiz-modal" id="quiz">
         <div class="quiz-modal__container container">
@@ -272,236 +398,113 @@
         </div>
     </div>
     <!--  4th quiz  -->
-    <div class="quiz quiz-modal" id="quiz4">
-        <div class="quiz-modal__container container">
-            <div class="quiz__container row">
-                <div class="column__semi-width col-12 col-lg-9 d-flex flex-column justify-content-between">
-                    <p class="quiz__title text-left d-flex flex-wrap align-items-center">
-                        <img src="img/checker.png" alt="" class="checker"> Узнайте, готовы ли Вы для путешествия
-                    </p>
-                    <p class="quiz__prequestion">Выберите наиболее подходящий вариант</p>
-                    <h2 class="quiz__question">Как выглядит Ваше рабочее место</h2>
-                    <form method="post" action="#post" class="quiz-form__workplace">
-                        <div class="row owl-carousel">
-                            <div class="workplace-group form-group">
-                                <label class="workplace" for="workplace_1">
-                                    <img class="workplace__image" src="img/workplace_1.jpg" alt="">
-                                    <input class="workplace__input" type="radio" name="workplace" id="workplace_1">
-                                    <span class="workplace__checker"></span>   
-                                </label>
-                            </div>
-                            <div class="workplace-group form-group">
-                                <label class="workplace" for="workplace_2">
-                                    <img class="workplace__image" src="img/workplace_2.jpg" alt="">
-                                    <input class="workplace__input" type="radio" name="workplace" id="workplace_2">
-                                    <span class="workplace__checker"></span>   
-                                </label>
-                            </div>
-                            <div class="workplace-group form-group">
-                                <label class="workplace" for="workplace_3">
-                                    <img class="workplace__image" src="img/workplace_3.jpg" alt="">
-                                    <input class="workplace__input" type="radio" name="workplace" id="workplace_3">
-                                    <span class="workplace__checker"></span>   
-                                </label>
-                            </div>
-                            <div class="workplace-group form-group">
-                                <label class="workplace" for="workplace_4">
-                                    <img class="workplace__image" src="img/workplace_2.jpg" alt="">
-                                    <input class="workplace__input" type="radio" name="workplace" id="workplace_4">
-                                    <span class="workplace__checker"></span>   
-                                </label>
-                            </div>
-                            <div class="workplace-group form-group">
-                                <label class="workplace" for="workplace_5">
-                                    <img class="workplace__image" src="img/workplace_1.jpg" alt="">
-                                    <input class="workplace__input" type="radio" name="workplace" id="workplace_5">
-                                    <span class="workplace__checker"></span>   
-                                </label>
-                            </div>
-                            <div class="workplace-group form-group">
-                                <label class="workplace" for="workplace_6">
-                                    <img class="workplace__image" src="img/workplace_3.jpg" alt="">
-                                    <input class="workplace__input" type="radio" name="workplace" id="workplace_6">
-                                    <span class="workplace__checker"></span>   
-                                </label>
-                            </div>
-                            <div class="external-scroll_x">
-                                <div class="scroll-element_outer">
-                                    <div class="scroll-element_size"></div>
-                                    <div class="scroll-element_track"></div>
-                                    <div class="scroll-bar"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="w-100 d-lg-none"></div>
-                <div class="column__right col-12 col-lg-3 col-md-12 d-flex flex-column justify-content-between">
-                    <div class="discount__wrapper d-lg-block d-flex justify-content-between flex-wrap">
-                        <p class="discount__heading  d-flex flex-wrap justify-content-around align-items-center">
-                            <span class="discount__counter">22%</span> Ваша<br>скидка
-                        </p>
-                        <p class="discount__subheading d-flex flex-wrap justify-content-around align-items-center"><img src="img/increase.png" alt="" class="discout__img">Скидка растет с<br>каждым ответом</p>
-                    </div>
-                    <div class="specialist__wrapper d-lg-block d-flex justify-content-between flex-wrap">
-                        <div class="specialist">
-                            <img src="img/avatar.jpg" alt="" class="specialist__avatar">
-                            <div class="specialist__info">
-                                <p class="specialist__name">Frogger</p>
-                                <p class="specialist__role">Специалист</p>
-                            </div>
-                        </div>
-                        <p class="specialist__description">Я специализируюсь <br> на туракх, подскажу <br> и дам скидку</p>
-                    </div>
-
-                </div>
-            </div>
-            <div class="desktop row d-none d-md-flex">
-                <div class="progressbar__wrapper col-12 col-md-6">
-                    <p class="progressbar__description text-left">Вопрос 4 из 5</p>
-                    <div class="progressbar">
-                        <span style="width: 80%"></span>
-                    </div>
-                </div>
-                <div class="navigation col-12 col-md-6 d-flex flex-wrap justify-content-between">
-                    <div class="col d-sm-none d-md-block "></div>
-                    <img src="img/logo.png" class="quiz__logo d-sm-none d-md-block img-responsive" alt="">
-                    <div class="col-4 d-sm-none"></div>
-                    <div class="w-100"></div>
-                    <button class="navigation__button text-center prev">&#8592; Назад</button>
-                    <button class="navigation__button text-center next" disabled="disabled">&#8594; Далее</button>
-                    <!-- по умолчанию выключено -->
-                </div>
-            </div>
-            <div class="mobile row d-flex d-md-none justify-content-between">
-                <div class="col-6">
-                    <p class="progressbar__description text-left">Вопрос 4 из 5</p>
-                    <div class="progressbar">
-                        <span style="width: 80%"></span>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <img src="img/logo.png" class="quiz__logo-mobile d-sm-block d-md-none" alt="">
-                </div>
-            </div>
-            <div class="mobile navigation row  d-flex d-md-none justify-content-between">
-                <button class="navigation__button text-center prev">&#8592; Назад</button>
-                <button class="navigation__button text-center next" disabled="disabled">&#8594; Далее</button>
-            </div>
-        </div>
-    </div>
     <!--  5th quiz  -->
     <div class="quiz quiz-modal" id="quiz5">
-        <div class="quiz-modal__container container">
-            <div class="quiz__container row">
-                <div class="column__full-width col-12 d-flex flex-column justify-content-between">
-                    <p class="quiz__title text-left d-flex flex-wrap align-items-center">
-                        <img src="img/checker.png" alt="" class="checker"> Узнайте, готовы ли Вы для путешествия
-                    </p>
-                    <p class="quiz__prequestion">Выберите наиболее подходящий вариант</p>
-                    <h2 class="quiz__question">А тут много вариантов ответа, при этом вопрос и ответы без картинок?</h2>
-                    <form method="post" action="#post" class="quiz-form__checkbox d-flex flex-column">
-                        <div class="row flex-column flex-md-row">
-                            <div class="col-12 col-md-6">
-                                <div class="form-group checkbox-group">
-                                    <label class="checker__wrapper">
-                                        <input class="checkbox" type="checkbox" name="checkbox-test" checked>
-                                        <span class="checkbox-custom"></span>
-                                        <span class="label">Вариант выбран</span>
-                                    </label>
-                                </div>
-                                <div class="form-group checkbox-group">
-                                    <label class="checker__wrapper">
-                                        <input class="checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom"></span>
-                                        <span class="label">Вариант не выбран</span>
-                                    </label>
-                                </div>
-                                <div class="form-group checkbox-group">
-                                    <label class="checker__wrapper">
-                                        <input class="checkbox" type="checkbox" name="checkbox-test" checked>
-                                        <span class="checkbox-custom"></span>
-                                        <span class="label">Вариант выбран</span>
-                                    </label>
-                                </div>
-                                <div class="form-group checkbox-group">
-                                    <label class="checker__wrapper">
-                                        <input class="checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom"></span>
-                                        <span class="label">Вариант не выбран</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="form-group checkbox-group">
-                                    <label class="checker__wrapper">
-                                        <input class="checkbox" type="checkbox" name="checkbox-test" checked>
-                                        <span class="checkbox-custom"></span>
-                                        <span class="label">Вариант выбран</span>
-                                    </label>
-                                </div>
-                                <div class="form-group checkbox-group">
-                                    <label class="checker__wrapper">
-                                        <input class="checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom"></span>
-                                        <span class="label">Вариант не выбран</span>
-                                    </label>
-                                </div>
-                                <div class="form-group checkbox-group">
-                                    <label class="checker__wrapper">
-                                        <input class="checkbox" type="checkbox" name="checkbox-test" checked>
-                                        <span class="checkbox-custom"></span>
-                                        <span class="label">Вариант выбран</span>
-                                    </label>
-                                </div>
-                                <div class="form-group checkbox-group">
-                                    <label class="checker__wrapper">
-                                        <input class="checkbox" type="checkbox" name="checkbox-test">
-                                        <span class="checkbox-custom"></span>
-                                        <span class="label">Вариант не выбран</span>
-                                    </label>
-                                </div>
+                    <div class="quiz-modal__container container">
+                        <div class="quiz__container row">
+                            <div class="column__full-width col-12 d-flex flex-column justify-content-between">
+                                <p class="quiz__title text-left d-flex flex-wrap align-items-center">
+                                    <img src="img/checker.png" alt="" class="checker"> Узнайте, готовы ли Вы для путешествия
+                                </p>
+                                <p class="quiz__prequestion">Выберите наиболее подходящий вариант</p>
+                                <h2 class="quiz__question">А тут много вариантов ответа, при этом вопрос и ответы без картинок?</h2>
+                                <form class="swiper-container" style="max-width: 600px">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                           <div class="workplace-group form-group">
+                                                <label class="workplace" for="workplace_1">
+                                                    <img class="workplace__image" src="img/workplace_1.jpg" alt="">
+                                                    <input class="workplace__input" type="radio" name="workplace" id="workplace_1">
+                                                    <span class="workplace__checker"></span>   
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                           <div class="workplace-group form-group">
+                                                <label class="workplace" for="workplace_2">
+                                                    <img class="workplace__image" src="img/workplace_3.jpg" alt="">
+                                                    <input class="workplace__input" type="radio" name="workplace" id="workplace_2">
+                                                    <span class="workplace__checker"></span>   
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                           <div class="workplace-group form-group">
+                                                <label class="workplace" for="workplace_3">
+                                                    <img class="workplace__image" src="img/workplace_3.jpg" alt="">
+                                                    <input class="workplace__input" type="radio" name="workplace" id="workplace_3">
+                                                    <span class="workplace__checker"></span>   
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                           <div class="workplace-group form-group">
+                                                <label class="workplace" for="workplace_4">
+                                                    <img class="workplace__image" src="img/workplace_2.jpg" alt="">
+                                                    <input class="workplace__input" type="radio" name="workplace" id="workplace_4">
+                                                    <span class="workplace__checker"></span>   
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                           <div class="workplace-group form-group">
+                                                <label class="workplace" for="workplace_5">
+                                                    <img class="workplace__image" src="img/workplace_3.jpg" alt="">
+                                                    <input class="workplace__input" type="radio" name="workplace" id="workplace_5">
+                                                    <span class="workplace__checker"></span>   
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                           <div class="workplace-group form-group">
+                                                <label class="workplace" for="workplace_6">
+                                                    <img class="workplace__image" src="img/workplace_1.jpg" alt="">
+                                                    <input class="workplace__input" type="radio" name="workplace" id="workplace_6">
+                                                    <span class="workplace__checker"></span>   
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-scrollbar"></div>
+                            </form>
                             </div>
                         </div>
-                    </form>
-                </div>
-            </div>
-            <div class="desktop row d-none d-md-flex">
-                <div class="progressbar__wrapper col-12 col-md-6">
-                    <p class="progressbar__description text-left">Вопрос 5 из 5</p>
-                    <div class="progressbar">
-                        <span style="width: 100%"></span>
+                        <div class="desktop row d-none d-md-flex">
+                            <div class="progressbar__wrapper col-12 col-md-6">
+                                <p class="progressbar__description text-left">Вопрос 5 из 5</p>
+                                <div class="progressbar">
+                                    <span style="width: 100%"></span>
+                                </div>
+                            </div>
+                            <div class="navigation col-12 col-md-6 d-flex flex-wrap justify-content-between">
+                                <div class="col d-sm-none d-md-block "></div>
+                                <img src="img/logo.png" class="quiz__logo d-sm-none d-md-block img-responsive" alt="">
+                                <div class="col-4 d-sm-none"></div>
+                                <div class="w-100"></div>
+                                <button class="navigation__button text-center prev">&#8592; Назад</button>
+                                <button class="navigation__button text-center next" disabled="disabled">&#8594; Далее</button>
+                                <!-- по умолчанию выключено -->
+                            </div>
+                        </div>
+                        <div class="mobile row d-flex d-md-none justify-content-between">
+                            <div class="col-6">
+                                <p class="progressbar__description text-left">Вопрос 5 из 5</p>
+                                <div class="progressbar">
+                                    <span style="width: 100%"></span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <img src="img/logo.png" class="quiz__logo-mobile d-sm-block d-md-none" alt="">
+                            </div>
+                        </div>
+                        <div class="mobile navigation row  d-flex d-md-none justify-content-between">
+                            <button class="navigation__button text-center prev">&#8592; Назад</button>
+                            <button class="navigation__button text-center next" disabled="disabled">&#8594; Далее</button>
+                        </div>
                     </div>
                 </div>
-                <div class="navigation col-12 col-md-6 d-flex flex-wrap justify-content-between">
-                    <div class="col d-sm-none d-md-block "></div>
-                    <img src="img/logo.png" class="quiz__logo d-sm-none d-md-block img-responsive" alt="">
-                    <div class="col-4 d-sm-none"></div>
-                    <div class="w-100"></div>
-                    <button class="navigation__button text-center prev">&#8592; Назад</button>
-                    <button class="navigation__button text-center next" disabled="disabled">&#8594; Далее</button>
-                    <!-- по умолчанию выключено -->
-                </div>
-            </div>
-            <div class="mobile row d-flex d-md-none justify-content-between">
-                <div class="col-6">
-                    <p class="progressbar__description text-left">Вопрос 5 из 5</p>
-                    <div class="progressbar">
-                        <span style="width: 100%"></span>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <img src="img/logo.png" class="quiz__logo-mobile d-sm-block d-md-none" alt="">
-                </div>
-            </div>
-            <div class="mobile navigation row  d-flex d-md-none justify-content-between">
-                <button class="navigation__button text-center prev">&#8592; Назад</button>
-                <button class="navigation__button text-center next" disabled="disabled">&#8594; Далее</button>
-            </div>
-        </div>
-    </div>
 
-    <script src="js/scripts.min.js"></script>
+                <script src="js/scripts.min.js"></script>
 </body>
 
 </html>

@@ -19,7 +19,7 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.65
-	overflow-x: hidden
+	overflow-x: auto
 	color: $text
 	input, textarea
 		border: #666 1px solid
@@ -96,6 +96,7 @@ b, strong
     width: 100%
     //height: 100%
     //max-height: 550px
+    padding: 24px
     background-color:  #ffffff
     box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.1)
     box-sizing: border-box
@@ -190,8 +191,8 @@ label[for='file']
     vertical-align: middle  
 .upload
     margin: 10px
-.workplace-group
-    margin-right: 5%
+//.workplace-group
+//    margin-right: 5%
 input[name='workplace']
     display: none        
 .workplace__checker
@@ -199,7 +200,8 @@ input[name='workplace']
     left: 160px
     top: -170px
     box-sizing: border-box
-input[name='workplace']
+.swiper-slide
+.swiper-slide + input[name='workplace']
     &:hover + .workplace__checker
         display: inline-block
     &:checked + .workplace__checker
@@ -214,7 +216,7 @@ input[name='workplace']
             left: 2px
             background: $default-gradient
             border-radius: 2px
-.workplace__image,.workplace,.workplace-group
+.workplace__image
     width: 200px
     height: 180px
 /* checkbox start
@@ -353,27 +355,36 @@ input[name='workplace']
         border: none
         color: #fff
         
-//slider
-.owl-dot
-    width: 10px
-    height: 10px
-    border-radius: 50%
-    background-color: #000!important
-    color: red!important
-//////
-.owl-nav
-    display: flex;
-    justify-content: center;
-    button
-        margin: 10px
-        padding: 3px 6px
-        i
-            color: #226cac
-            border: 1px transparent solid
-            border-radius: 50%
-            padding: 3px 6px
-            &:hover
-                border: 1px $accent solid
-                box-shadow: 0px 0px 7px 3px rgba(255, 255, 255, 0.07)
+//       slider
+//.owl-dot
+//    width: 10px
+//    height: 10px
+//    border-radius: 50%
+//    background-color: #000!important
+//    color: red!important
+//.owl-nav
+//    display: flex;
+//    justify-content: center;
+//    button
+//        margin: 10px
+//        padding: 3px 6px
+//        i
+//            color: #226cac
+//            border: 1px transparent solid
+//            border-radius: 50%
+//            padding: 3px 6px
+//            &:hover
+//                border: 1px $accent solid
+//                box-shadow: 0px 0px 7px 3px rgba(255, 255, 255, 0.07)
+.swiper-container
+    max-width: 715px!important
+.swiper-wrapper
+    max-width: 1030px!important
+.swiper-slide
+    max-width: 240px!important
+    width: 240px!important
+.swiper-scrollbar-drag
+    background-color: $accent
+
 
 @import "media" // Always at the end
