@@ -94,6 +94,7 @@ b, strong
     cursor: default!important
     max-width: 1000px
     width: 100%
+    padding: 24px
     //height: 100%
     //max-height: 550px
     background-color:  #ffffff
@@ -135,7 +136,10 @@ b, strong
 .quiz-form__radio
     margin-bottom: 80px
 .quiz-form__salary, .quiz-form__file
-    margin-bottom: 30%    
+    margin-bottom: 30% 
+.quiz-form__workplace
+    max-width: 714px!important
+    height: 245px
 input[type='radio']
     appearance: none
     margin-right: 20px
@@ -190,18 +194,19 @@ label[for='file']
     vertical-align: middle  
 .upload
     margin: 10px
-.workplace-group
-    margin-right: 5%
 input[name='workplace']
     display: none        
 .workplace__checker
-    display: none
-    left: 160px
-    top: -170px
+    display: inline-block
+    left: 165px
+    top: -165px
     box-sizing: border-box
 input[name='workplace']
+    &:not(:checked) + .workplace__checker
+        opacity: 0
     &:hover + .workplace__checker
         display: inline-block
+        opacity: 1
     &:checked + .workplace__checker
         display: inline-block
         &::before
@@ -214,9 +219,22 @@ input[name='workplace']
             left: 2px
             background: $default-gradient
             border-radius: 2px
-.workplace__image,.workplace,.workplace-group
-    width: 200px
-    height: 180px
+.workplace-group,.workplace
+    max-width: 200px
+    max-height: 180px
+    width: 100%
+    height: 100%
+    img
+        max-width: 200px
+        max-height: 180px
+        width: 100%
+        height: 100%
+.workplace-group
+    height: 235px
+.workplace__description
+    font-size: $font-size-default - 6
+    margin: -20px auto
+    text-align: center
 /* checkbox start
 .checker__wrapper
     border-radius: 3px
@@ -354,26 +372,16 @@ input[name='workplace']
         color: #fff
         
 //slider
-.owl-dot
-    width: 10px
-    height: 10px
-    border-radius: 50%
-    background-color: #000!important
-    color: red!important
-//////
-.owl-nav
-    display: flex;
-    justify-content: center;
-    button
-        margin: 10px
-        padding: 3px 6px
-        i
-            color: #226cac
-            border: 1px transparent solid
-            border-radius: 50%
-            padding: 3px 6px
-            &:hover
-                border: 1px $accent solid
-                box-shadow: 0px 0px 7px 3px rgba(255, 255, 255, 0.07)
-
+.swiper-container-horizontal
+    .swiper-scrollbar
+        left: 0
+        width: 95%
+.swiper-scrollbar
+    border: 1px solid $accent
+    background: transparent
+    padding: 2px 0
+    height: 10px !important
+.swiper-scrollbar-drag
+    background: $accent
+    margin: 0 -5px 0 0
 @import "media" // Always at the end
