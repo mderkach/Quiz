@@ -19,7 +19,7 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.65
-	overflow-x: auto
+	overflow-x: hidden
 	color: $text
 	input, textarea
 		border: #666 1px solid
@@ -27,7 +27,7 @@ body
 		&:focus:required:invalid
 			border-color: red
 		&:required:valid
-			border-color: green
+			border-color: $accent
 h1, h2, h3, h4, h5, h6, p, a
     font-family: $default-font
     
@@ -94,9 +94,9 @@ b, strong
     cursor: default!important
     max-width: 1000px
     width: 100%
+    padding: 24px
     //height: 100%
     //max-height: 550px
-    padding: 24px
     background-color:  #ffffff
     box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.1)
     box-sizing: border-box
@@ -130,13 +130,16 @@ b, strong
     margin-bottom: 5px
 .quiz__question 
     font-size: $font-size-default + 4
-    font-weight: 300
+    font-weight: 400
 
 // form styling start
 .quiz-form__radio
     margin-bottom: 80px
 .quiz-form__salary, .quiz-form__file
-    margin-bottom: 30%    
+    margin-bottom: 30% 
+.quiz-form__workplace
+    max-width: 714px!important
+    height: 245px
 input[type='radio']
     appearance: none
     margin-right: 20px
@@ -191,19 +194,19 @@ label[for='file']
     vertical-align: middle  
 .upload
     margin: 10px
-//.workplace-group
-//    margin-right: 5%
 input[name='workplace']
     display: none        
 .workplace__checker
-    display: none
-    left: 160px
-    top: -170px
+    display: inline-block
+    left: 165px
+    top: -165px
     box-sizing: border-box
-.swiper-slide
-.swiper-slide + input[name='workplace']
+input[name='workplace']
+    &:not(:checked) + .workplace__checker
+        opacity: 0
     &:hover + .workplace__checker
         display: inline-block
+        opacity: 1
     &:checked + .workplace__checker
         display: inline-block
         &::before
@@ -216,44 +219,79 @@ input[name='workplace']
             left: 2px
             background: $default-gradient
             border-radius: 2px
-.workplace__image
-    width: 200px
-    height: 180px
+.workplace-group,.workplace
+    max-width: 200px
+    max-height: 180px
+    width: 100%
+    height: 100%
+    img
+        max-width: 200px
+        max-height: 180px
+        width: 100%
+        height: 100%
+.workplace-group
+    height: 235px
+.workplace__description
+    font-size: $font-size-default - 6
+    margin: -20px auto
+    text-align: center
 /* checkbox start
 .checker__wrapper
     border-radius: 3px
     border: 1px solid #000
     padding: 4px 5px
     width: 85%
+.checker__wrapper.checker__wrapper-checked
+    border: 1px solid $accent
+    box-shadow: 0 0 3px 4px #226cac4d
 .checkbox-group
     &:nth-child(2n)
         margin-bottom: 30px
 .checkbox-custom,.workplace__checker 
 	position: relative
 	width: 22px            
-	height: 22px            
+	height: 22px
+.workplace__checker           
 	border: 1px solid #666
 	border-radius: 3px
 .checkbox-custom, .label 
 	display: inline-block
-	vertical-align: middle
-.checkbox-custom 
-        display: none
 .checkbox
     display: none
     &:checked + .checkbox-custom
-        display: inline-block
-        &::before
-            content: ""             
-            display: block			 
-            position: absolute      
-            top: 2px
-            right: 2px
-            bottom: 2px
-            left: 2px
-            background: $default-gradient
-            border-radius: 2px
+        .fa-check-circle
+            opacity: 1
+            color: $accent
+            background: #fff
+            box-shadow: 0 0 3px 4px #226cac4d
+.fa-check-circle
+    opacity: .5
+    color: #000
+    background: #000
+    border-radius: 50%
+
 //checkbox end
+.contacts__input
+    border: none
+    border-bottom: #000 2px solid
+    margin: 25px auto
+    box-sizing: border-box
+    padding-left: 35px
+    &:focus
+        border-bottom: $accent 2px solid
+        transition: .5s
+    &:focus + .fa__contacts
+        color: $accent
+        transition: .5s
+    &:focus:required:invalid + .fa__contacts
+        color: red
+    &:required:valid + .fa__contacts
+        color: $accent
+.fa__contacts
+    position: relative
+    left: -240px
+.rotate
+    transform: rotateY(180deg)
 // form styling end
 .radio__description
     margin-bottom: 0
@@ -354,37 +392,73 @@ input[name='workplace']
         background: $default-gradient
         border: none
         color: #fff
+.results
+    max-width: 250px
+.confidential
+    font-size: $font-size-default - 6
+    margin-top: 24px
         
-//       slider
-//.owl-dot
-//    width: 10px
-//    height: 10px
-//    border-radius: 50%
-//    background-color: #000!important
-//    color: red!important
-//.owl-nav
-//    display: flex;
-//    justify-content: center;
-//    button
-//        margin: 10px
-//        padding: 3px 6px
-//        i
-//            color: #226cac
-//            border: 1px transparent solid
-//            border-radius: 50%
-//            padding: 3px 6px
-//            &:hover
-//                border: 1px $accent solid
-//                box-shadow: 0px 0px 7px 3px rgba(255, 255, 255, 0.07)
-.swiper-container
-    max-width: 715px!important
-.swiper-wrapper
-    max-width: 1030px!important
-.swiper-slide
-    max-width: 240px!important
-    width: 240px!important
+//slider
+.swiper-container-horizontal
+    .swiper-scrollbar
+        left: 0
+        width: 95%
+.swiper-scrollbar
+    border: 1px solid $accent
+    background: transparent
+    padding: 2px 0
+    height: 10px !important
 .swiper-scrollbar-drag
-    background-color: $accent
-
-
+    background: $accent
+    margin: 0 -5px 0 0
+    
+//float widgets
+.widget-mini
+    max-width: 270px
+    box-sizing: border-box
+    position: fixed
+    right: 2%
+    bottom: 2%
+.widget-slider
+    max-width: 550px
+    box-sizing: border-box
+    position: fixed
+    left: 2%
+    bottom: 45%
+.widget-float
+    z-index: 10
+    box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.1)
+.widget__head
+    padding: 10px 30px
+    width: 100%
+    background: #fff
+    box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.1)
+.widget__body
+    width: 100%
+    background: #eff9fe
+    padding: 35px 30px
+.widget__title
+    font-size: 16px
+    margin-bottom: 5px
+.widget__question
+    font-size: 24px
+    line-height: 24px
+    font-weight: 400
+    margin-bottom: 0
+.widget_vacation
+    margin-right: 5px
+.widget-radio__description
+    font-size: 19px
+    margin-bottom: 0
+.widget-form__workplace
+    max-width: 490px
+.widget-workplace__image   
+    max-width: 150px
+    max-height: 135px
+.widget-workplace__checker
+    top: -130px
+    left: 115px
+//.widget-workplace-group
+    margin-right: 30px
+    
 @import "media" // Always at the end
