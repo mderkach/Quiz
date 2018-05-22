@@ -150,6 +150,19 @@
             </div>
         </div>
     </section>
+    <section class="demo">
+            <div class="wrapper semi-screen screen text-center">
+               <div class="container">
+               <div class="semi-vh"></div>
+                <h1 class="heading__main">Готовы ли вы к отпуску?</h1>
+                    <p class="subheading__main">Пройдите тест и узнайте</p>
+                    <div class="semi-vh"></div>
+                    <div class="button main__button">
+                        <a href="" class="button__popup fancybox">Пройти тест</a>
+            </div>
+            </div>
+        </div>
+    </section>
     <section style="background: #F0FFFF; padding-bottom: 800px">
         <!--  1st quiz  -->
         <div class="quiz quiz-modal" id="quiz">
@@ -654,13 +667,33 @@
                     <div class="col-12">
                         <p class="confidential">Введенные данные охраняются политикой конфиденциальности</p>
                     </div>
-                    <div class="col-10">
+                    <div class="col-12 d-flex justify-content-end">
                         <img src="img/logo.png" class="quiz__logo-mobile d-sm-block d-md-none" alt="">
                     </div>
                 </div>
                 <div class="mobile navigation row  d-flex d-md-none justify-content-between">
                     <button class="navigation__button text-center prev">&#8592; Назад</button>
                     <button class="navigation__button text-center next results" disabled="disabled"> Посмотреть результат</button>
+                </div>
+            </div>
+        </div>
+        <!-- final quiz    -->
+        <div class="quiz quiz-modal" style="display: block; margin: 10px auto" id="quiz6">
+            <div class="quiz-modal__container container">
+                <div class="quiz__container row">
+                    <div class="column__full-width col-12 d-flex flex-column justify-content-between">
+                        <p class="quiz__title text-left d-flex flex-wrap align-items-center">
+                            <img src="img/checker.png" alt="" class="checker"> Узнайте, готовы ли Вы для путешествия
+                        </p>
+                        <br>
+                        <h2 class="quiz__question">Спасибо за ваши ответы</h2>
+                        <br>
+                        <p>Расчет стоимости: {RESULT} рублей.</p> 
+                        <p>В знак благодарности за потраченное время дарим скидку {DISCOUNT}% !</p>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                        <img src="img/logo.png" class="quiz__logo-final" alt="">
+                    </div>
                 </div>
             </div>
         </div>
