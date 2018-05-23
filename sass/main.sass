@@ -157,6 +157,7 @@ input[type='number']
     width: 100%
     &::placeholder
         opacity: 0.5
+
 //remove spinners start
 input[type='number']::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button 
     -webkit-appearance: none
@@ -166,6 +167,7 @@ input[type='number']
 input[type="file"]
     display: none
 //remove spinners end
+
 label
     font-family: $default-font
     &:hover
@@ -268,9 +270,8 @@ input[name='workplace']
 //    opacity: .5
 //    color: #000
 //    background: darkgrey
-    
-
 //checkbox end
+
 .contacts__input
     border: none
     border-bottom: #000 2px solid
@@ -293,6 +294,7 @@ input[name='workplace']
 .rotate
     transform: rotateY(180deg)
 // form styling end
+
 .radio__description
     margin-bottom: 0
 .checker
@@ -431,19 +433,17 @@ input[name='workplace']
 .chevron-left
     top: -7px
     right: -3px
+
 //float widgets
-.widget-mini
-    max-width: 270px
+.widget-mini,.widget-slider
     box-sizing: border-box
     position: fixed
     right: 2%
     bottom: 2%
+.widget-mini
+    max-width: 270px
 .widget-slider
     max-width: 550px
-    box-sizing: border-box
-    position: fixed
-    left: 2%
-    bottom: 2%
 .widget-float
     z-index: 10
     box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.1)
@@ -490,6 +490,7 @@ input[name='workplace']
     height: 530px
     margin: 0 auto
     border-radius: 30px
+
 //spacing
 .empty
     height: 25vh
