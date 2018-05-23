@@ -28,22 +28,11 @@ $(function () {
                 slidesPerView: 2,
                 spaceBetween: 1
             }
-        }
-    });
-    var mySwiperWidget = new Swiper('.widget-swiper-container', {
-        slidesPerView: 3,
-        scrollbar: {
-            el: '.swiper-scrollbar',
-            hide: false,
-            draggable: true,
         },
-        breakpoints: {
-            425: {
-                slidesPerView: 2,
-                spaceBetween: 1,
-                centeredSlides: true
-            }
-        }
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+      },
     });
     $('input[name="phone"]').inputmask("+7(999)999-99-99");
     $('.checkbox').on('change', function() {

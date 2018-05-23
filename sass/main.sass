@@ -52,9 +52,6 @@ b, strong
 .screen
     background: url('../img/background.jpg') no-repeat 100% 100%
 
-.empty
-    height: 25vh
-
 .fullscreen
     height: 100vh
     
@@ -95,17 +92,11 @@ b, strong
     max-width: 1000px
     width: 100%
     padding: 24px
-    //height: 100%
-    //max-height: 550px
+    height: 540px
     background-color:  #ffffff
     box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.1)
     box-sizing: border-box
     transition: all .7s;
-//.fancybox-close-small
-//    right: -10px
-//    top: -10px
-//.quiz__container
-//    padding: 60px
     
 .quiz__title, .quiz_question, .hint__heading, .navigation__button
     color:  $text
@@ -208,17 +199,21 @@ input[name='workplace']
         display: inline-block
         opacity: 1
     &:checked + .workplace__checker
-        display: inline-block
-        &::before
-            content: ""             
-            display: block			 
-            position: absolute      
-            top: 2px
-            right: 2px
-            bottom: 2px
-            left: 2px
-            background: $default-gradient
-            border-radius: 2px
+        .fa-check-circle
+            opacity: 1
+            color: $accent
+            background: $accent
+            box-shadow: 0 0 0 5px rgba(34,108,172,.5)
+//        &::before
+//            content: ""             
+//            display: block			 
+//            position: absolute      
+//            top: 2px
+//            right: 2px
+//            bottom: 2px
+//            left: 2px
+//            background: $default-gradient
+//            border-radius: 2px
 .workplace-group,.workplace
     max-width: 200px
     max-height: 180px
@@ -243,17 +238,17 @@ input[name='workplace']
     width: 85%
 .checker__wrapper.checker__wrapper-checked
     border: 1px solid $accent
-    box-shadow: 0 0 3px 4px #226cac4d
+    box-shadow: 0 0 0px 2px rgba(34,108,172,.2)
 .checkbox-group
     &:nth-child(2n)
-        margin-bottom: 30px
+        margin-bottom: 20px
 .checkbox-custom,.workplace__checker 
 	position: relative
 	width: 22px            
 	height: 22px
 .workplace__checker           
-	border: 1px solid #666
-	border-radius: 3px
+    //	border: 1px solid #666
+    //	border-radius: 3px
 .checkbox-custom, .label 
 	display: inline-block
 .checkbox
@@ -263,12 +258,17 @@ input[name='workplace']
             opacity: 1
             color: $accent
             background: #fff
-            box-shadow: 0 0 3px 4px #226cac4d
+            box-shadow: 0 0 0px 2px rgba(34,108,172,.2)
 .fa-check-circle
     opacity: .5
     color: #000
     background: #000
-    border-radius: 50%
+    border-radius: 100%
+//.hover-circle
+//    opacity: .5
+//    color: #000
+//    background: darkgrey
+    
 
 //checkbox end
 .contacts__input
@@ -289,7 +289,7 @@ input[name='workplace']
         color: $accent
 .fa__contacts
     position: relative
-    left: -255px
+    left: -240px
 .rotate
     transform: rotateY(180deg)
 // form styling end
@@ -340,7 +340,7 @@ input[name='workplace']
 .specialist
     margin-bottom: 30px
 .specialist__wrapper
-    margin-top: 20px
+    margin-top: 55px
 .specialist__info
     display: inline-block
     vertical-align: middle
@@ -411,20 +411,39 @@ input[name='workplace']
 .swiper-scrollbar-drag
     background: $accent
     margin: 0 -5px 0 0
-    
+.swiper-button-big
+    top: 40%
+.swiper-button-next, .swiper-button-prev
+    width: 22px
+    height: 22px
+    margin-top: -22px
+    background: #fff
+    border-radius: 50%
+    &:focus
+        outline: none
+.chevron
+    position: relative
+    color: $accent
+    outline: 0
+.chevron-right
+    top: -7px
+    right: -6px
+.chevron-left
+    top: -7px
+    right: -3px
 //float widgets
 .widget-mini
     max-width: 270px
     box-sizing: border-box
-//    position: fixed
-//    right: 2%
-//    bottom: 2%
+    position: fixed
+    right: 2%
+    bottom: 2%
 .widget-slider
     max-width: 550px
     box-sizing: border-box
-//    position: fixed
-//    left: 2%
-//    bottom: 45%
+    position: fixed
+    left: 2%
+    bottom: 45%
 .widget-float
     z-index: 10
     box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.1)
@@ -458,8 +477,6 @@ input[name='workplace']
 .widget-workplace__checker
     top: -130px
     left: 115px
-//.widget-workplace-group
-    margin-right: 30px
 .quiz__logo-final
     width: 115px
     height: 35px
@@ -473,7 +490,20 @@ input[name='workplace']
     height: 530px
     margin: 0 auto
     border-radius: 30px
+//spacing
+.empty
+    height: 25vh
 .semi-vh
     height: 10vh
+.mt-16
+    margin-top: 16px
+.mt-35
+    margin-top: 35px
+.mt-40
+    margin-top: 40px
+.mt-70
+    margin-top: 70px
+    
+    
     
 @import "media" // Always at the end
