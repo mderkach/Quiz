@@ -146,7 +146,10 @@
                         <h2 class="quiz__question">Какая у вас зарплата?</h2>
                         <form method="post" action="#post" class="quiz-form__salary d-flex flex-column">
                             <label for="salary">
-                                <input name="salary" min="1" type="number" placeholder="Зарплата" onfocus="this.placeholder = 'Введите число'" onblur="this.placeholder = 'Зарплата'">, руб.
+                                <input name="salary" id="salary" min="1" type="number" placeholder="Зарплата" onfocus="this.placeholder = 'Введите число'" onblur="this.placeholder = 'Зарплата'">, руб.
+                            </label>
+                            <label for="range">
+                                100 000 <input type="range" id="range" min="100 000" max="300 000" value="200 000" step="1"> 300 000
                             </label>
                             <button class="navigation__button text-center next" disabled="disabled">Продолжить</button>
                             <!-- по умолчанию выключено -->

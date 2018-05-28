@@ -1,19 +1,19 @@
 $(function () {
-    $("[data-fancybox]").fancybox({
-        touch: false,
-        scrolling: false,
-        hideScrollbar: true,
-        beforeShow: function () {
-            $("body").css({
-                'overflow-y': 'hidden'
-            });
-        },
-        afterClose: function () {
-            $("body").css({
-                'overflow-y': 'visible'
-            });
-        }
-    });
+//    $("[data-fancybox]").fancybox({
+//        touch: false,
+//        scrolling: false,
+//        hideScrollbar: true,
+//        beforeShow: function () {
+//            $("body").css({
+//                'overflow-y': 'hidden'
+//            });
+//        },
+//        afterClose: function () {
+//            $("body").css({
+//                'overflow-y': 'visible'
+//            });
+//        }
+//    });
     var mySwiper = new Swiper('.swiper-container', {
         setWrapperSize: 695,
         effect: 'slide',
@@ -38,5 +38,9 @@ $(function () {
     $('.checkbox').on('change', function() {
     var div = $(this).closest('.checker__wrapper');
     $(this).is(":checked") ? div.addClass("checker__wrapper-checked") : div.removeClass("checker__wrapper-checked");
+    function changeValue(){
+        var rangeValue = document.getElementById("range").value;
+        console.log(rangeValue);
+    }     
 });
 });
